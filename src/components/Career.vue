@@ -23,8 +23,8 @@ const career = [
       <h2 class="section-title">Career Journey</h2>
       <div class="space-y-12">
         <div v-for="(position, index) in career" :key="index"
-          class="relative pl-8 border-l-2 border-secondary/30 pb-8 last:pb-0">
-          <div class="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-0"></div>
+          class="relative pl-8 border-l-2 border-chalky-300/30 pb-8 last:pb-0">
+          <div class="absolute w-4 h-4 bg-chalky-300 rounded-full -left-[9px] top-0"></div>
           <div class="space-y-3">
             <div class="flex justify-between items-start">
               <div>

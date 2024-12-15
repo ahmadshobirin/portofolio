@@ -8,11 +8,11 @@ defineProps<{
 
 <template>
   <section>
-    <h2 class="text-2xl font-bold mb-4">Key Features</h2>
+    <h2 class="text-2xl font-bold mb-4 text-elegant-800">Key Features</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div v-for="feature in project.details?.features" :key="feature"
-        class="bg-white p-4 rounded-lg shadow">
-        <p class="text-gray-700">{{ feature }}</p>
+        class="card">
+        <p class="text-elegant-700">{{ feature }}</p>
       </div>
     </div>
   </section>

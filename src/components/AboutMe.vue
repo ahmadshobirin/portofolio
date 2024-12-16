@@ -5,7 +5,7 @@ import SkillsList from './about/SkillsList.vue';
 </script>
 
 <template>
-  <section id="about" class="bg-gradient-elegant from-elegant-50 via-white to-elegant-100">
+  <section id="about" class="bg-gradient-elegant from-elegant-50 via-white to-elegant-100 pt-16">
     <div class="section-container">
       <h2 class="section-title">About Me</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

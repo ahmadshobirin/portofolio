@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import ProjectCard from './ProjectCard.vue';
 import type { Project } from '../../types';
 

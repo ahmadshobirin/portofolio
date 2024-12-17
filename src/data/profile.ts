@@ -1,8 +1,7 @@
 export const skills = [
-  'PHP (Laravel, CodeIgniter)',
-  'JavaScript',
   'Golang',
   'Microservices',
   'Backend Development',
+  'PHP (Laravel, CodeIgniter)',
   'Full-stack Development'
 ];

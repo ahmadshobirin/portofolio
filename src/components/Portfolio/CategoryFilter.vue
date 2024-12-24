@@ -15,8 +15,8 @@ const emit = defineEmits<{
       :class="[
         'px-4 py-2 rounded-full transition-colors',
         selectedCategory === category
-          ? 'bg-secondary text-white'
-          : 'hover:bg-secondary hover:text-white'
+          ? 'bg-accent-600 text-white shadow-md'
+          : 'bg-elegant-100 text-elegant-700 hover:bg-accent-100 hover:text-accent-700'
       ]"
       @click="emit('select', category)">
       {{ category }}

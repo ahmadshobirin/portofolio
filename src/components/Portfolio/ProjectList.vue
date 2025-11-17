@@ -11,7 +11,7 @@ const props = defineProps<{
 }>();
 
 const itemsPerPage = 6;
-const { currentPage, totalPages, paginatedItems, goToPage } = usePagination(props.projects, itemsPerPage);
+const { currentPage, totalPages, paginatedItems, goToPage } = usePagination(() => props.projects, itemsPerPage);
 
 // Reset to first page when category changes
 watch(() => props.category, () => {

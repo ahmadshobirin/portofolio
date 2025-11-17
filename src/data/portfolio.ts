@@ -28,7 +28,7 @@ export const careerPositions: CareerPosition[] = [
   },
   {
     title: 'Part-time Trainer',
-    company: 'Lazday',
+    company: 'Lazday, Surabaya',
     period: '2019 - 2021',
     description: `As a part-time trainer at Lazday, I delivered both video and written learning materials. 
     I designed and taught a Laravel full-stack course with a real case-study implementation, focusing on practical, production-ready patterns.

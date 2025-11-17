@@ -11,15 +11,18 @@ import { careerPositions } from '../data/portfolio';
           Download CV (PDF)
         </a>
       </div>
-      <div class="space-y-12">
+      <div class="relative space-y-12 pl-12">
+        <div class="absolute left-0 top-0 bottom-0 border-l-2 border-elegant-300 dark:border-elegant-700"></div>
         <div v-for="(position, index) in careerPositions" :key="index"
-          class="relative pl-8 border-l-2 border-secondary/30 pb-8 last:pb-0">
-          <div class="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-0"></div>
-          <div class="space-y-3">
-            <div class="flex justify-between items-start">
-              <div>
-                <h3 class="text-xl font-semibold text-elegant-800 dark:text-elegant-100">{{ position.title }}</h3>
-                <p class="text-elegant-600 dark:text-elegant-300">{{ position.company }}</p>
+          class="relative pb-8 last:pb-0">
+          <div class="absolute w-8 h-8 rounded-full left-0 -translate-x-1/2 top-3 z-0 
+                      bg-gradient-to-r from-accent-200 via-accent-400 to-accent-500 opacity-60 dark:opacity-50 
+                      saturate-150 brightness-110"></div>
+          <div class="relative space-y-2 z-10">
+            <div class="flex justify-between items-center">
+              <div class="relative">
+                <h3 class="relative z-10 text-xl font-semibold leading-tight text-elegant-800 dark:text-elegant-100">{{ position.title }}</h3>
+                <p class="relative z-10 mt-0.5 text-elegant-600 dark:text-elegant-300">{{ position.company }}</p>
               </div>
               <span class="text-sm text-elegant-500 dark:text-elegant-400">{{ position.period }}</span>
             </div>
@@ -29,11 +32,6 @@ import { careerPositions } from '../data/portfolio';
                 class="px-2 py-1 bg-elegant-100 dark:bg-elegant-800 text-elegant-700 dark:text-elegant-200 rounded-md text-sm">
                 {{ tech }}
               </span>
-            </div>
-            <div v-if="position.cvUrl" class="pt-2">
-              <a :href="position.cvUrl" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700">
-                Lihat detail di CV
-              </a>
             </div>
           </div>
         </div>

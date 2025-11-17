@@ -7,7 +7,7 @@ export const backendProjects: Project[] = [
     category: 'Backend',
     description: 'Developed a scalable e-commerce backend using Golang microservices.',
     technologies: ['Golang', 'gRPC', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'A high-performance e-commerce platform built with microservices architecture, handling thousands of transactions daily.',
       challenges: [
@@ -44,7 +44,7 @@ export const backendProjects: Project[] = [
     category: 'Backend',
     description: 'Built a secure payment processing system with multiple provider integrations.',
     technologies: ['Node.js', 'TypeScript', 'RabbitMQ', 'MongoDB', 'Docker'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'A robust payment gateway service supporting multiple payment providers and handling high-volume transactions.',
       challenges: ['Payment provider integration', 'Transaction security', 'Scalability'],
@@ -61,7 +61,7 @@ export const backendProjects: Project[] = [
     category: 'Backend',
     description: 'Developed a centralized authentication service with OAuth2 and OIDC support.',
     technologies: ['Java', 'Spring Boot', 'OAuth2', 'PostgreSQL', 'Redis'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'Centralized authentication service supporting multiple authentication methods and SSO.',
       challenges: ['Security compliance', 'Multiple auth flows', 'Session management'],
@@ -78,7 +78,7 @@ export const backendProjects: Project[] = [
     category: 'Backend',
     description: 'Created a distributed log analytics system processing terabytes of data daily.',
     technologies: ['Python', 'Elasticsearch', 'Kafka', 'Docker', 'Kubernetes'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'Real-time log processing and analytics platform handling massive data volumes.',
       challenges: ['Data processing at scale', 'Real-time analytics', 'Storage optimization'],
@@ -95,7 +95,7 @@ export const backendProjects: Project[] = [
     category: 'Backend',
     description: 'Built a scalable notification system supporting multiple channels.',
     technologies: ['Node.js', 'Redis', 'RabbitMQ', 'MongoDB', 'Docker'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'Multi-channel notification service supporting email, SMS, and push notifications.',
       challenges: ['Provider integration', 'Delivery guarantees', 'Template management'],
@@ -112,7 +112,7 @@ export const backendProjects: Project[] = [
     category: 'Backend',
     description: 'Developed a high-performance API gateway with advanced features.',
     technologies: ['Golang', 'Redis', 'etcd', 'Docker', 'Kubernetes'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'Modern API gateway with authentication, rate limiting, and request transformation.',
       challenges: ['Performance', 'Dynamic routing', 'Plugin system'],

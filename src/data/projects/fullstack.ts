@@ -7,7 +7,7 @@ export const fullstackProjects: Project[] = [
     category: 'Full Stack',
     description: 'Built a customer relationship management system using Laravel and Vue.js.',
     technologies: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'Redis', 'Docker'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'A comprehensive CRM system for managing customer relationships and interactions.',
       challenges: ['Complex permissions', 'Real-time updates', 'Data migration'],
@@ -25,7 +25,7 @@ export const fullstackProjects: Project[] = [
     category: 'Full Stack',
     description: 'Developed a collaborative project management platform with real-time features.',
     technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'WebSocket'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'Modern project management tool with real-time collaboration features.',
       challenges: ['Real-time sync', 'Complex UI', 'Performance'],
@@ -43,7 +43,7 @@ export const fullstackProjects: Project[] = [
     category: 'Full Stack',
     description: 'Created an interactive learning platform with video courses and assessments.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Redis', 'AWS'],
-    image: 'https://via.placeholder.com/400x300',
+    image: 'https://placehold.co/400x300',
     details: {
       overview: 'Feature-rich e-learning platform supporting various content types.',
       challenges: ['Video streaming', 'User progress', 'Content management'],

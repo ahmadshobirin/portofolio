@@ -14,14 +14,14 @@ const project = computed(() => projects.find(p => p.id === projectId.value));
 </script>
 
 <template>
-  <div v-if="project" class="min-h-screen bg-gray-50 pt-16">
+  <div v-if="project" class="min-h-screen bg-gray-50 dark:bg-elegant-900 pt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <!-- Header -->
       <div class="mb-12">
         <div class="flex items-center gap-4 mb-6">
-          <a href="#/" class="text-secondary hover:text-secondary/80">
+          <router-link to="/" class="text-secondary hover:text-secondary/80">
             ← Back to Portfolio
-          </a>
+          </router-link>
           <span class="text-sm px-3 py-1 bg-secondary/10 text-secondary rounded-full">
             {{ project.category }}
           </span>
@@ -32,7 +32,7 @@ const project = computed(() => projects.find(p => p.id === projectId.value));
 
       <!-- Project Image -->
       <div class="mb-12">
-        <img :src="project.image" :alt="project.title" class="w-full h-96 object-cover rounded-lg shadow-lg" />
+        <img :src="project.image" :alt="project.title" class="w-full h-96 object-cover rounded-lg shadow-lg" loading="lazy" />
       </div>
 
       <!-- Project Details -->

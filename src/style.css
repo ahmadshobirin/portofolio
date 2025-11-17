@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-elegant-50 text-elegant-900;
+    @apply bg-elegant-50 text-elegant-900 dark:bg-elegant-900 dark:text-elegant-100;
   }
 }
 
@@ -14,28 +14,28 @@
   }
   
   .section-title {
-    @apply text-3xl font-bold text-elegant-800 mb-8 text-center;
+    @apply text-3xl font-bold text-elegant-800 dark:text-elegant-100 mb-8 text-center;
   }
 
   .btn-primary {
-    @apply bg-accent-600 text-white px-4 py-2 rounded-md hover:bg-accent-700 transition-colors;
+    @apply bg-accent-600 text-white px-4 py-2 rounded-md hover:bg-accent-700 dark:bg-accent-600 dark:hover:bg-accent-700 transition-colors;
   }
 
   .btn-secondary {
-    @apply border-2 border-accent-600 text-accent-600 px-4 py-2 rounded-md hover:bg-accent-50 transition-colors;
+    @apply border-2 border-accent-600 text-accent-600 px-4 py-2 rounded-md hover:bg-accent-50 dark:border-accent-500 dark:text-accent-300 dark:hover:bg-elegant-800 transition-colors;
   }
 
   .card {
-    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6;
+    @apply bg-white dark:bg-elegant-800 dark:text-elegant-100 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6;
   }
 
   .tag {
-    @apply px-3 py-1 bg-elegant-100 text-elegant-700 rounded-full text-sm;
+    @apply px-3 py-1 bg-elegant-100 text-elegant-700 dark:bg-elegant-800 dark:text-elegant-200 rounded-full text-sm;
   }
 
   .input-field {
-    @apply mt-1 block w-full rounded-md border-elegant-200 shadow-sm 
+    @apply mt-1 block w-full rounded-md border-elegant-200 dark:border-elegant-700 shadow-sm 
     focus:border-accent-500 focus:ring-accent-500 
-    placeholder-elegant-400;
+    placeholder-elegant-400 dark:placeholder-elegant-500;
   }
 }

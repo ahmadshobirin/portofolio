@@ -16,7 +16,7 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
-  <section id="portfolio" class="bg-gray-50">
+  <section id="portfolio" class="bg-gray-50 dark:bg-elegant-900">
     <div class="section-container">
       <h2 class="section-title">Portfolio</h2>
       <CategoryFilter 

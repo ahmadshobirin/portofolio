@@ -37,12 +37,14 @@ defineProps<{
         <a v-if="project.details?.demoUrl"
           :href="project.details.demoUrl"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn-primary block w-full text-center">
           View Live Demo
         </a>
         <a v-if="project.details?.githubUrl"
           :href="project.details.githubUrl"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn-secondary block w-full text-center">
           View on GitHub
         </a>

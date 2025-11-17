@@ -3,7 +3,7 @@ import { careerPositions } from '../data/portfolio';
 </script>
 
 <template>
-  <section id="career" class="bg-white pt-16">
+  <section id="career" class="bg-white dark:bg-elegant-900 pt-16">
     <div class="section-container">
       <h2 class="section-title">Career Journey</h2>
       <div class="space-y-12">
@@ -13,15 +13,15 @@ import { careerPositions } from '../data/portfolio';
           <div class="space-y-3">
             <div class="flex justify-between items-start">
               <div>
-                <h3 class="text-xl font-semibold">{{ position.title }}</h3>
-                <p class="text-gray-600">{{ position.company }}</p>
+                <h3 class="text-xl font-semibold text-elegant-800 dark:text-elegant-100">{{ position.title }}</h3>
+                <p class="text-elegant-600 dark:text-elegant-300">{{ position.company }}</p>
               </div>
-              <span class="text-sm text-gray-500">{{ position.period }}</span>
+              <span class="text-sm text-elegant-500 dark:text-elegant-400">{{ position.period }}</span>
             </div>
-            <p class="text-gray-700">{{ position.description }}</p>
+            <p class="text-elegant-700 dark:text-elegant-200">{{ position.description }}</p>
             <div class="flex flex-wrap gap-2">
               <span v-for="tech in position.technologies" :key="tech"
-                class="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">
+                class="px-2 py-1 bg-elegant-100 dark:bg-elegant-800 text-elegant-700 dark:text-elegant-200 rounded-md text-sm">
                 {{ tech }}
               </span>
             </div>

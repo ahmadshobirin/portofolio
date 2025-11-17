@@ -1,7 +1,13 @@
 export const skills = [
-  'Golang',
+  'System Design',
+  'Monolithic Architecture',
   'Microservices',
-  'Backend Development',
-  'PHP (Laravel, CodeIgniter)',
-  'Full-stack Development'
+  'Distributed Systems',
+  'Event-Driven Architecture',
+  'Domain-Driven Design',
+  'Scalability Patterns',
+  'REST APIs',
+  'Golang',
+  'Laravel',
+  'Full-stack Development',
 ];

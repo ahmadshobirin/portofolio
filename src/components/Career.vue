@@ -6,6 +6,11 @@ import { careerPositions } from '../data/portfolio';
   <section id="career" class="bg-white dark:bg-elegant-900 pt-16">
     <div class="section-container">
       <h2 class="section-title">Career Journey</h2>
+      <div class="flex justify-end mb-6">
+        <a href="/CV Ahmad Shobirin 2023.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          Download CV (PDF)
+        </a>
+      </div>
       <div class="space-y-12">
         <div v-for="(position, index) in careerPositions" :key="index"
           class="relative pl-8 border-l-2 border-secondary/30 pb-8 last:pb-0">
@@ -24,6 +29,11 @@ import { careerPositions } from '../data/portfolio';
                 class="px-2 py-1 bg-elegant-100 dark:bg-elegant-800 text-elegant-700 dark:text-elegant-200 rounded-md text-sm">
                 {{ tech }}
               </span>
+            </div>
+            <div v-if="position.cvUrl" class="pt-2">
+              <a :href="position.cvUrl" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700">
+                Lihat detail di CV
+              </a>
             </div>
           </div>
         </div>

@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "build:isadev": "BUILD_BASE=/ vue-tsc -b && vite build",
+    "build:isadev": "cross-env BUILD_BASE=/ vue-tsc -b && cross-env BUILD_BASE=/ vite build",
+    "build:root": "cross-env BUILD_BASE=/ vue-tsc -b && cross-env BUILD_BASE=/ vite build",
     "preview": "vite preview",
+    "preview:root": "cross-env BUILD_BASE=/ vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "deploy:isadev": "npm run build:isadev && gh-pages -d dist --cname ahmadshobirin.is-a.dev"
+    "deploy:userpages": "npm run build:isadev && gh-pages -d dist -r https://github.com/ahmadshobirin/ahmadshobirin.github.io.git",
+    "deploy:userpages:master": "npm run build:root && cp README.dist.md dist/README.md && gh-pages -d dist -r https://github.com/ahmadshobirin/ahmadshobirin.github.io.git -b master"
   },
   "dependencies": {
     "vue": "^3.4.38",
@@ -27,5 +30,7 @@
     "postcss": "^8.4.35",
     "gh-pages": "^6.1.1",
     "@types/node": "^20.11.30"
+    ,
+    "cross-env": "^7.0.3"
   }
 }

@@ -12,7 +12,8 @@
     "preview:root": "cross-env BUILD_BASE=/ vite preview",
     "deploy": "npm run build && gh-pages -d dist",
     "deploy:userpages": "npm run build:isadev && gh-pages -d dist -r https://github.com/ahmadshobirin/ahmadshobirin.github.io.git",
-    "deploy:userpages:master": "npm run build:root && cp README.dist.md dist/README.md && gh-pages -d dist -r https://github.com/ahmadshobirin/ahmadshobirin.github.io.git -b master"
+    "deploy:userpages:master": "npm run build:root && cp README.dist.md dist/README.md && gh-pages -d dist -r https://github.com/ahmadshobirin/ahmadshobirin.github.io.git -b master",
+    "deploy:isadev:master": "npm run build:root && cp README.dist.md dist/README.md && gh-pages -d dist -r https://github.com/ahmadshobirin/ahmadshobirin.github.io.git -b master --cname ahmadshobirin.is-a.dev"
   },
   "dependencies": {
     "vue": "^3.4.38",

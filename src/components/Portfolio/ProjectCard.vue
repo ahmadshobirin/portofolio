@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-    <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" loading="lazy" />
+    <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
     <div class="p-6 space-y-4">
       <span class="text-sm text-accent-600 font-medium">{{ project.category }}</span>
       <h3 class="text-xl font-semibold text-elegant-800">{{ project.title }}</h3>

@@ -57,7 +57,6 @@ const goToPage = (page: number) => {
 <style scoped>
 .pagination-button {
   @apply px-4 py-2 rounded-md bg-elegant-100 text-elegant-700 
-         dark:bg-elegant-800 dark:text-elegant-200
          transition-all duration-200 ease-in-out;
 }
 </style>

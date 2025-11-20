@@ -2,6 +2,53 @@ import type { Project } from '../../types';
 
 export const fullstackProjects: Project[] = [
   {
+    id: 'modern-store-autopos',
+    title: 'Modern Store Building Autopos',
+    category: 'Full Stack',
+    description: 'Handle pembayaran via Android, kirim data ke ERP, cashier dashboard untuk settlement; Android app untuk penjualan tiap lantai.',
+    technologies: ['Laravel', 'Android', 'jQuery', 'Bootstrap', 'Cronjob', 'REST API'],
+    image: 'https://placehold.co/400x300',
+    details: {
+      overview: 'POS modern terintegrasi ERP: Android untuk penjualan di tiap lantai, payment diselesaikan di kasir dengan alur packing.',
+      challenges: [
+        'Sinkronisasi penjualan & pembayaran ke ERP agar stok dan transaksi tidak mismatch',
+        'Pergerakan barang dari gudang ke etalase lintas lantai dengan konsistensi data'
+      ],
+      solutions: [
+        'Android app untuk operasi penjualan per-lantai',
+        'Cashier dashboard terpusat untuk proses pembayaran dan settlement',
+        'REST API untuk mobile & back-office dengan integrasi ERP dua arah',
+        'Cronjob rekonsiliasi & retry pengiriman data ke ERP saat jaringan tidak stabil',
+        'Alur packing: sales membuat order, barang dipacking, pembayaran final di kasir'
+      ],
+      results: [
+        'Sales tiap lantai dapat melakukan transaksi di lokasi masing-masing',
+        'Pembayaran tetap tersentral di kasir sambil menunggu packing',
+        'Pengurangan mismatch persediaan antara gudang dan etalase',
+        'Data penjualan & pembayaran tersinkronisasi ke ERP'
+      ],
+      features: [
+        'Penjualan multi-lantai (multi-location)',
+        'Android POS untuk sales',
+        'Cashier dashboard & settlement terpusat',
+        'Alur packing sebelum pembayaran final',
+        'Sinkronisasi ERP untuk order, pembayaran, dan stok'
+      ],
+      technicalDetails: [
+        'Deploy di server klien',
+        'Laravel',
+        'Android',
+        'jQuery',
+        'Bootstrap',
+        'Cronjob',
+        'REST API',
+        'Integrasi ERP',
+        'Tahun: 2018',
+        'Client: Jaya Teknik Pratama (Bali)'
+      ]
+    }
+  },
+  {
     id: 'crm-system',
     title: 'CRM System',
     category: 'Full Stack',

@@ -23,7 +23,6 @@ export interface CareerPosition {
   period: string;
   description: string;
   technologies: string[];
-  cvUrl?: string;
 }
 
 export interface NavigationItem {

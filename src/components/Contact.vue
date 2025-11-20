@@ -5,7 +5,7 @@ import ContactForm from './contact/ContactForm.vue';
 </script>
 
 <template>
-  <section id="contact" class="bg-white dark:bg-elegant-900">
+  <section id="contact" class="bg-white">
     <div class="section-container">
       <ContactHero />
       <ContactIncentive />

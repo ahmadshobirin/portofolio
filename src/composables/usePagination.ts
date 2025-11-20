@@ -1,15 +1,14 @@
 import { ref, computed } from 'vue';
 
-export function usePagination<T>(itemsRef: () => T[], itemsPerPage: number) {
+export function usePagination<T>(itemsGetter: () => T[], itemsPerPage: number) {
   const currentPage = ref(1);
   
-  const totalPages = computed(() => Math.ceil(itemsRef().length / itemsPerPage));
+  const totalPages = computed(() => Math.ceil(itemsGetter().length / itemsPerPage));
   
   const paginatedItems = computed(() => {
-    const items = itemsRef();
     const start = (currentPage.value - 1) * itemsPerPage;
     const end = start + itemsPerPage;
-    return items.slice(start, end);
+    return itemsGetter().slice(start, end);
   });
 
   const goToPage = (page: number) => {

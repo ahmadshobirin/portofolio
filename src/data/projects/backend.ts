@@ -2,125 +2,134 @@ import type { Project } from '../../types';
 
 export const backendProjects: Project[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'E-commerce Platform',
+    id: 'dokter-apps-unesa',
+    title: 'Dokter Apps UNESA',
     category: 'Backend',
-    description: 'Developed a scalable e-commerce backend using Golang microservices.',
-    technologies: ['Golang', 'gRPC', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes'],
+    description: 'Backend majalah/jurnal dokter UNESA (web & mobile): manajemen konten, pengumuman, submission dari mobile, notifikasi, dan akses dokumen aman via signed URL.',
+    technologies: ['Golang', 'PostgreSQL', 'Firebase Cloud Messaging', 'Cloud Storage', 'OAuth2', 'JWT'],
     image: 'https://placehold.co/400x300',
     details: {
-      overview: 'A high-performance e-commerce platform built with microservices architecture, handling thousands of transactions daily.',
+      overview: 'Mendukung web untuk pengelolaan majalah/jurnal/pengumuman dan mobile untuk konsumsi & pengajuan konten; autentikasi sosial dan akses dokumen aman.',
       challenges: [
-        'Scaling the system to handle high concurrent users',
-        'Implementing real-time inventory management',
-        'Ensuring data consistency across microservices'
+        'Akses dokumen yang diunggah admin harus aman dan terkontrol',
+        'Multi-auth (Google, Apple, Facebook, Basic, JWT) dengan pengalaman mulus',
+        'Sinkronisasi alur publishing (web) dan submission (mobile)',
+        'Notifikasi andal ke berbagai perangkat'
       ],
       solutions: [
-        'Implemented horizontal scaling using Kubernetes',
-        'Used Redis for caching and real-time inventory updates',
-        'Implemented saga pattern for distributed transactions'
+        'Cloud Storage signed URL untuk distribusi dokumen terproteksi',
+        'OAuth2 providers & Basic/JWT untuk registrasi/login',
+        'Workflow submission konten dari mobile ke admin dengan status & audit trail',
+        'FCM untuk notifikasi pengumuman dan pembaruan konten',
+        'Skema PostgreSQL untuk konten, riwayat, dan laporan'
       ],
       results: [
-        '99.99% system uptime',
-        '50% reduction in response time',
-        'Successfully handling 10,000+ concurrent users'
+        'Akses konten aman dengan kontrol durasi/izin',
+        'Notifikasi mencapai user secara konsisten',
+        'Proses submission mobile ke admin berjalan efektif'
       ],
       features: [
-        'Order processing and management',
-        'Inventory tracking system',
-        'Payment gateway integration'
+        'Manajemen majalah, jurnal, pengumuman (web)',
+        'Submission konten dari mobile',
+        'Signed URL untuk dokumen',
+        'Social Auth (Google, Apple, Facebook) + Basic/JWT',
+        'History & reporting'
       ],
       technicalDetails: [
-        'Microservices built with Golang',
-        'gRPC for inter-service communication',
-        'PostgreSQL for persistent storage'
+        'Year: 2020',
+        'Tech: Golang, PostgreSQL, FCM, Cloud Storage',
+        'Auth: Google, Apple, Facebook, Basic, JWT',
+        'Role: Backend Developer (support Web & Mobile, signed URLs)'
+      ]
+    }
+  },
+  {
+    id: 'meda-school-system',
+    title: 'Meda',
+    category: 'Backend',
+    description: 'School information system backend connecting students, parents, teachers, homeroom, and admin; supports registration (PPDB), scheduling, attendance, announcements, quizzes, chat, and notifications.',
+    technologies: ['Golang', 'PostgreSQL', 'Firebase Cloud Messaging', 'Firebase Realtime Database', 'OAuth2', 'JWT'],
+    image: 'https://placehold.co/400x300',
+    details: {
+      overview: 'Backend powering web and mobile with real-time communication and role-driven features, ensuring reliable notifications and messaging.',
+      challenges: [
+        'Multi-role domain with distinct workflows',
+        'Real-time notifications and messaging',
+        'Scalable chat per user and per class',
+        'Data consistency across web and mobile clients',
+        'Multiple auth flows (social, basic, JWT)'
       ],
-      githubUrl: 'https://github.com/yourusername/ecommerce-platform'
+      solutions: [
+        'Role-based access control and relational data modeling in PostgreSQL',
+        'FCM topic-based notifications and device token management',
+        'Realtime Database channels for private user-to-user and class chats',
+        'OAuth2 (Google, Apple, Facebook) + Basic/JWT auth with refresh tokens',
+        'Event-driven notifications for attendance, announcements, and quizzes',
+        'Audit trails and history for reporting'
+      ],
+      results: [
+        'Unified platform connecting all stakeholders',
+        'Reliable push notifications across devices',
+        'Consistent transaction history with class/student-level reporting'
+      ],
+      features: [
+        'Registration/PPDB',
+        'Class schedule management by homeroom',
+        'Student attendance',
+        'Announcements & quizzes',
+        'Private user-to-user chat',
+        'Class-wide chat channels',
+        'Reporting per class and per student'
+      ],
+      technicalDetails: [
+        'Year: 2020',
+        'Tech: Golang, PostgreSQL, FCM, Firebase Realtime Database',
+        'Auth: Google, Apple, Facebook, Basic, JWT',
+        'Role: Backend Developer (master data, transactions, history, reports)'
+      ]
     }
   },
   {
-    id: 'payment-gateway',
-    title: 'Payment Gateway Service',
+    id: 'xendit-keyboard',
+    title: 'Xendit Keyboard',
     category: 'Backend',
-    description: 'Built a secure payment processing system with multiple provider integrations.',
-    technologies: ['Node.js', 'TypeScript', 'RabbitMQ', 'MongoDB', 'Docker'],
+    description: 'Seller application with keyboard-integrated flows enabling seamless sales, auto-text replies, and in-app billing. Built with Golang and PostgreSQL, integrating social auth, JWT, Xendit payments, and bank account validation.',
+    technologies: ['Golang', 'PostgreSQL', 'OAuth2', 'JWT', 'Xendit'],
     image: 'https://placehold.co/400x300',
     details: {
-      overview: 'A robust payment gateway service supporting multiple payment providers and handling high-volume transactions.',
-      challenges: ['Payment provider integration', 'Transaction security', 'Scalability'],
-      solutions: ['Modular architecture', 'Encryption standards', 'Message queuing'],
-      results: ['99.9% uptime', 'PCI DSS compliance', '1M+ transactions processed'],
-      features: ['Multi-provider support', 'Automated reconciliation', 'Real-time reporting'],
-      technicalDetails: ['Event-driven architecture', 'Strong encryption', 'Automated testing'],
-      githubUrl: 'https://github.com/yourusername/payment-gateway'
-    }
-  },
-  {
-    id: 'auth-service',
-    title: 'Authentication Service',
-    category: 'Backend',
-    description: 'Developed a centralized authentication service with OAuth2 and OIDC support.',
-    technologies: ['Java', 'Spring Boot', 'OAuth2', 'PostgreSQL', 'Redis'],
-    image: 'https://placehold.co/400x300',
-    details: {
-      overview: 'Centralized authentication service supporting multiple authentication methods and SSO.',
-      challenges: ['Security compliance', 'Multiple auth flows', 'Session management'],
-      solutions: ['OAuth2 implementation', 'Token-based auth', 'Redis session store'],
-      results: ['Reduced auth time by 60%', 'Enhanced security', 'Simplified integration'],
-      features: ['SSO support', 'Multi-factor auth', 'Role-based access'],
-      technicalDetails: ['JWT tokens', 'OAuth2 providers', 'Rate limiting'],
-      githubUrl: 'https://github.com/yourusername/auth-service'
-    }
-  },
-  {
-    id: 'log-analytics',
-    title: 'Log Analytics Platform',
-    category: 'Backend',
-    description: 'Created a distributed log analytics system processing terabytes of data daily.',
-    technologies: ['Python', 'Elasticsearch', 'Kafka', 'Docker', 'Kubernetes'],
-    image: 'https://placehold.co/400x300',
-    details: {
-      overview: 'Real-time log processing and analytics platform handling massive data volumes.',
-      challenges: ['Data processing at scale', 'Real-time analytics', 'Storage optimization'],
-      solutions: ['Stream processing', 'Distributed indexing', 'Data compression'],
-      results: ['5TB daily processing', 'Sub-second query time', 'Cost reduction'],
-      features: ['Real-time dashboards', 'Custom alerting', 'Data retention'],
-      technicalDetails: ['ELK stack', 'Stream processing', 'Custom indexing'],
-      githubUrl: 'https://github.com/yourusername/log-analytics'
-    }
-  },
-  {
-    id: 'notification-service',
-    title: 'Notification Service',
-    category: 'Backend',
-    description: 'Built a scalable notification system supporting multiple channels.',
-    technologies: ['Node.js', 'Redis', 'RabbitMQ', 'MongoDB', 'Docker'],
-    image: 'https://placehold.co/400x300',
-    details: {
-      overview: 'Multi-channel notification service supporting email, SMS, and push notifications.',
-      challenges: ['Provider integration', 'Delivery guarantees', 'Template management'],
-      solutions: ['Queue-based delivery', 'Retry mechanisms', 'Template engine'],
-      results: ['99% delivery rate', 'Reduced costs', 'Improved reliability'],
-      features: ['Multi-channel support', 'Template management', 'Delivery tracking'],
-      technicalDetails: ['Queue processing', 'Template engine', 'Provider SDKs'],
-      githubUrl: 'https://github.com/yourusername/notification-service'
-    }
-  },
-  {
-    id: 'api-gateway',
-    title: 'API Gateway',
-    category: 'Backend',
-    description: 'Developed a high-performance API gateway with advanced features.',
-    technologies: ['Golang', 'Redis', 'etcd', 'Docker', 'Kubernetes'],
-    image: 'https://placehold.co/400x300',
-    details: {
-      overview: 'Modern API gateway with authentication, rate limiting, and request transformation.',
-      challenges: ['Performance', 'Dynamic routing', 'Plugin system'],
-      solutions: ['Custom router', 'Plugin architecture', 'Caching layer'],
-      results: ['1ms latency', 'Flexible routing', 'Easy integration'],
-      features: ['Rate limiting', 'Authentication', 'Request transformation'],
-      technicalDetails: ['Custom router', 'Plugin system', 'Caching'],
-      githubUrl: 'https://github.com/yourusername/api-gateway'
+      overview: 'A backend for a seller app featuring keyboard-integrated functions to streamline sales and billing, with secure authentication and payment processing.',
+      challenges: [
+        'Designing seamless keyboard-integrated sales flows',
+        'Supporting multiple authentication methods (social + basic + JWT)',
+        'Reliable payment processing with Xendit and bank account validation',
+        'Maintaining low latency for in-app billing and auto-responses'
+      ],
+      solutions: [
+        'Modular auth with OAuth2 providers (Google, Apple, Facebook) and JWT',
+        'Payment gateway integration with Xendit, including webhooks and reconciliation',
+        'Bank account validation service integration and verification workflows',
+        'PostgreSQL schemas for master data, transactions, histories, and reporting',
+        'Idempotent APIs, retry policies, and rate limiting for robustness',
+        'Observability with structured logging and metrics on critical paths'
+      ],
+      results: [
+        'Faster seller workflows via keyboard-driven actions',
+        'Reduced payment friction and improved billing reliability',
+        'Consistent transaction histories and actionable reports'
+      ],
+      features: [
+        'Keyboard-integrated selling and auto-text responses',
+        'In-app billing with secure payment flows',
+        'Social Auth (Google, Apple, Facebook) + Basic/JWT Auth',
+        'Bank account validation and verification',
+        'Transactional history and reporting'
+      ],
+      technicalDetails: [
+        'Year: 2020',
+        'Tech: Golang, PostgreSQL',
+        'Integrations: Google, Apple, Facebook, JWT, Xendit, Bank Validation',
+        'Role: Backend Developer (master data, transactions, history, reports)'
+      ]
     }
   }
 ];

@@ -167,23 +167,5 @@ export const fullstackProjects: Project[] = [
         'Client: PJB (Power Generation)'
       ]
     }
-  },
-  {
-    id: 'project-management',
-    title: 'Project Management Tool',
-    category: 'Full Stack',
-    description: 'Developed a collaborative project management platform with real-time features.',
-    technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'WebSocket'],
-    image: 'https://placehold.co/400x300',
-    details: {
-      overview: 'Modern project management tool with real-time collaboration features.',
-      challenges: ['Real-time sync', 'Complex UI', 'Performance'],
-      solutions: ['WebSocket', 'Component system', 'Optimization'],
-      results: ['Improved collaboration', 'Faster project delivery', 'User satisfaction'],
-      features: ['Task management', 'Team collaboration', 'File sharing'],
-      technicalDetails: ['Next.js', 'Prisma ORM', 'Real-time sync'],
-      demoUrl: 'https://pm-demo.yourdomain.com',
-      githubUrl: 'https://github.com/yourusername/project-management'
-    }
   }
 ];

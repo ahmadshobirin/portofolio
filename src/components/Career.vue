@@ -6,11 +6,11 @@ import { careerPositions } from '../data/portfolio';
   <section id="career" class="bg-white dark:bg-elegant-900 pt-16">
     <div class="section-container">
       <h2 class="section-title">Career Journey</h2>
-      <div class="flex justify-end mb-6">
+      <!-- <div class="flex justify-end mb-6">
         <a href="/CV Ahmad Shobirin 2023.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
           Download CV (PDF)
         </a>
-      </div>
+      </div> -->
       <div class="relative space-y-12 pl-12">
         <div class="absolute left-0 top-0 bottom-0 border-l-2 border-elegant-300 dark:border-elegant-700"></div>
         <div v-for="(position, index) in careerPositions" :key="index"

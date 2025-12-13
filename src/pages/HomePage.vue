@@ -4,7 +4,6 @@ import AboutMe from '../components/AboutMe.vue'
 import Career from '../components/Career.vue'
 import Portfolio from '../components/Portfolio.vue'
 import Contact from '../components/Contact.vue'
-import Footer from '../components/shared/Footer.vue'
 </script>
 
 <template>
@@ -15,5 +14,4 @@ import Footer from '../components/shared/Footer.vue'
     <Portfolio />
     <Contact />
   </main>
-  <Footer />
 </template>
